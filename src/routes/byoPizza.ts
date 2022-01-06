@@ -5,19 +5,6 @@ const pizzaOrders = require('../models/pizzaClass')
 
 let pizzaOrder = pizzaOrders.pizzaOrderClass
 
-// class PizzaOrder implements Pizza {
-//     size: any[];
-//     toppings: any[];
-//     gluten: string;
-//     specialInstructions: string;
-//     constructor(size: any[], toppings: any[], gluten: string, specialInstructions: string) {
-//         this.size = size;
-//         this.toppings = toppings;
-//         this.gluten = gluten;
-//         this.specialInstructions = specialInstructions
-//     }
-// }
-
 byopizza.get('/', (req, res) => {
     res.render('byopizza')
 });

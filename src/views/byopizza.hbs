@@ -62,39 +62,45 @@
   .priceP{
     text-align: center;
   }
+  .size {
+        background-color: white;
+        font-size: 20px;
+    }
 </style>
 
 <h1 class="header">Build Your Own Pizza</h1>
 <div class="bYOPContainer">
 <form method="POST">
+  <div>
+        <label for="size">Size</label>
+      <select name="size" class="size">
+          <option value="7,  Small">Small</option>
+          <option value="10,  Medium">Medium</option>
+          <option value="12,  Large">Large</option>
+      </select>
+  </div>
 
-    <label for="size">Size</label>
-    <select name="size" class="size">
-        <option value="7,  Small">Small</option>
-        <option value="10,  Medium">Medium</option>
-        <option value="12,  Large">Large</option>
-    </select>
 
     <p class="chooseYourToppinngs" >Choose Your Toppings</p>
-        <input type="checkbox" class="toppings" name="toppings"  value="5,  Grapes">
+        <input type="checkbox" name="toppings"  value="5,  Grapes">
         <label for="toppings" class="toppings" > Grapes</label>
-        <input type="checkbox" class="toppings" name="toppings"  value="10,  Liver">
+        <input type="checkbox" name="toppings"  value="10,  Liver">
         <label for="toppings"class="toppings"> Liver</label>
-        <input type="checkbox" class="toppings" name="toppings"  value="5,  Ramen">
+        <input type="checkbox"  name="toppings"  value="5,  Ramen">
         <label for="toppings"class="toppings"> Ramen</label>
-        <input type="checkbox" class="toppings" name="toppings"  value="10,  HotDog">
+        <input type="checkbox" name="toppings"  value="10,  HotDog">
         <label for="toppings"class="toppings"> Hot Dog</label>
-        <input type="checkbox" class="toppings" name="toppings"  value="5,  Ocra">
+        <input type="checkbox" name="toppings"  value="5,  Ocra">
         <label for="toppings" class="toppings"> Ocra</label>
-        <input type="checkbox" class="toppings" name="toppings"  value="5,  Celery">
+        <input type="checkbox" name="toppings"  value="5,  Celery">
         <label for="toppings" class="toppings"> Celery</label>
-        <input type="checkbox" class="toppings" name="toppings"  value="5,  Tomato">
+        <input type="checkbox" name="toppings"  value="5,  Tomato">
         <label for="toppings" class="toppings"> Tomato</label> <br>
-        <input type="checkbox" class="toppings" name="toppings"  value="5,  Beets">
+        <input type="checkbox" name="toppings"  value="5,  Beets">
         <label for="toppings" class="toppings"> Beets</label>
-        <input type="checkbox" class="toppings" name="toppings"  value="10,  Bolgna">
+        <input type="checkbox" name="toppings"  value="10,  Bolgna">
         <label for="toppings" class="toppings"> Bolgna</label>
-        <input type="checkbox" class="toppings" name="toppings"  value="10,  Tuna">
+        <input type="checkbox" name="toppings"  value="10,  Tuna">
         <label for="toppings" class="toppings"> Tuna</label> <br><br>
 
     <input type="checkbox" class="toppings" name="gluten" value="Yes">
