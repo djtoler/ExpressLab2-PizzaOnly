@@ -33,26 +33,19 @@
     .shorter {
         width: 55%;
     }
-    .delivery {
-        font-size: 40px;
-        color: brown;
-        font-family: "Merienda", sans-serif;
-    }
     .total {
         text-align: center;
         font-size: 40px;
         color: brown;
         font-family: "Merienda", sans-serif;
-        
     }
 </style>
 <div class="shorter">
- <h1 class="header">Specialty Pizza: <br> HotDog Pizza</h1>   
+ <h1 class="header">Specialty Pizza: <br> {{name}} </h1>   
 </div>
 <br><br><br><br>
  <div class="white rounder">
-    <p class="typeOfPizza"> Name: HotDog Pizza</p>
-    <p class="price"> Price: $</p>
+    <p> Name: {{name}} </p>
+    <p class="price"> Price: ${{price}}</p>
     <p><a href="http://localhost:5050/">Back To Home Page</a></p>
  </div>
-
