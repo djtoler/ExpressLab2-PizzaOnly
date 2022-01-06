@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+    body, html {
+                background-image: url(/pizza2.jpg);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        margin: 0;
+    }
+    .bg {
+
+    }
+    .header {
+        font-size: 80px;
+        color: brown;
+        font-family: "Merienda", sans-serif;
+    }
+    .heads {
+        font-size: 40px;
+        color: brown;
+        font-family: "Merienda", sans-serif;
+    }
+    .lis {
+        font-size: 30px;
+        color: brown;
+        font-family: "Merienda", sans-serif;
+    }
+    .review {
+        text-align: center;
+    }
+    a {
+        color: rgb(8, 8, 8);
+    }
+    .custom {
+        font-size: 60px;
+    }
+</style>
+
+<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <div class="bg">
+        <h1 class="header">Welcome To <br> Pizza Express</h1>
+        <div class="wholeContainer">
+            <div class="specialtyPizzaContainer">
+                <h2 class="heads">Special Pizzas</h2>
+                <ul class="specialtyPizzaList">
+                    <li class="lis"><a href="http://localhost:5050/hotdogpizza">Hotdog Pizza</a></li>
+                    <li class="lis"><a href="http://localhost:5050/ramenpizza">Ramen Pizza</a></li>
+                    <li class="lis"><a href="http://localhost:5050/liverpizza">MacCheese Pizza</a></li>
+                </ul>
+            </div>
+            <div class="customPizzaContainer">
+                <h2 class="heads review custom">Custom Pizza</h2>
+                <p class="lis review"><a href="http://localhost:5050/byopizza">Custom Pizza</a></p>
+            </div>
+            <div class="reviewContainer">
+                <h2 class="review lis">Leave A Review</h2>
+                <p class="review lis"><a href="http://localhost:5050/review">Click here to leave a review!!</a></p>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

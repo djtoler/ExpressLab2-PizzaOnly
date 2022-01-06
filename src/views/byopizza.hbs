@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+    body, html {
+                background-image: url(/pizza2.jpg);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        margin: 0;
+    }
+    .bg {
+
+    }
+    .header {
+        font-size: 80px;
+        color: brown;
+        font-family: "Merienda", sans-serif;
+    }
+    .toppings {
+        font-size: 20px;
+        color: black;
+        font-family: "Merienda", sans-serif;
+    }
+    .chooseYourToppinngs {
+        font-size: 60px;
+        color: brown;
+        font-family: "Merienda", sans-serif;
+    }
+    .price {
+        text-align: center;
+        box-shadow: 3px 4px 0px 0px #8a2a21;
+        background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+        background-color:#c62d1f;
+        border-radius:18px;
+        border:1px solid #d02718;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:25px;
+        padding:7px 25px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #810e05;
+    }
+    a {
+        color: rgb(8, 8, 8);
+        font-size: 25px;
+    }
+    .specialInstructions {
+        font-size: 30px;
+        font-family: "Merienda", sans-serif;
+        color: brown;
+    }
+  .price:hover {
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color:#f24437;
+  }
+  .priceP{
+    text-align: center;
+  }
+</style>
+
+<h1 class="header">Build Your Own Pizza</h1>
+<div class="bYOPContainer">
+<form method="POST">
+
+    <label for="size">Size</label>
+    <select name="size" class="size">
+        <option value="7,  Small">Small</option>
+        <option value="10,  Medium">Medium</option>
+        <option value="12,  Large">Large</option>
+    </select>
+
+    <p class="chooseYourToppinngs" >Choose Your Toppings</p>
+        <input type="checkbox" class="toppings" name="toppings"  value="5,  Grapes">
+        <label for="toppings" class="toppings" > Grapes</label>
+        <input type="checkbox" class="toppings" name="toppings"  value="10,  Liver">
+        <label for="toppings"class="toppings"> Liver</label>
+        <input type="checkbox" class="toppings" name="toppings"  value="5,  Ramen">
+        <label for="toppings"class="toppings"> Ramen</label>
+        <input type="checkbox" class="toppings" name="toppings"  value="10,  HotDog">
+        <label for="toppings"class="toppings"> Hot Dog</label>
+        <input type="checkbox" class="toppings" name="toppings"  value="5,  Ocra">
+        <label for="toppings" class="toppings"> Ocra</label>
+        <input type="checkbox" class="toppings" name="toppings"  value="5,  Celery">
+        <label for="toppings" class="toppings"> Celery</label>
+        <input type="checkbox" class="toppings" name="toppings"  value="5,  Tomato">
+        <label for="toppings" class="toppings"> Tomato</label> <br>
+        <input type="checkbox" class="toppings" name="toppings"  value="5,  Beets">
+        <label for="toppings" class="toppings"> Beets</label>
+        <input type="checkbox" class="toppings" name="toppings"  value="10,  Bolgna">
+        <label for="toppings" class="toppings"> Bolgna</label>
+        <input type="checkbox" class="toppings" name="toppings"  value="10,  Tuna">
+        <label for="toppings" class="toppings"> Tuna</label> <br><br>
+
+    <input type="checkbox" class="toppings" name="gluten" value="Yes">
+    <label for="noGluten"> Gluten-Free Crust? ($2.00 extra)</label><br><br>
+
+    <p class="specialInstructions" >Special Instructions (Optional)</p>  <br>
+    <textarea rows="4" cols="50" class="toppings" placeholder="Enter special instructions here..." name="comment"></textarea><br><br>
+
+    <p class="priceP" ><input type="submit" class="price" value="Calculate Price"> <a href="http://localhost:5050/">Never Mind</a></p>
+
+</form>   
+
+{{!-- <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<div class="alert alert-secondary" role="alert">
+  A simple secondary alert—check it out!
+</div> --}}
+
