@@ -94,7 +94,7 @@ byopizza.post('/', (req, res) => {
 
     // Format the total price of a pizza with double decimal points. 
     const newDecimalNumber = totalPriceCounter.toFixed(2);
-console.log(pizzaSize);
+    console.log(pizzaSize);
 
     // Set up handlebars for order confirmation page & show it when the form is submitted
     res.render('byoPizzaCon', {
